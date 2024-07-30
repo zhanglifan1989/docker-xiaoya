@@ -38,6 +38,8 @@ services:
       - media:/media
       - config:/config
       - cache:/cache
+    devices:
+      - /dev/dri:/dev/dri
     ports:
       - "6908:6908"
     restart: unless-stopped
